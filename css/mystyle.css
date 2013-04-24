@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+#putty-enterprise img{
+    margin-bottom:2em;	
+}
+
+.puttytemplate-footer-bot-space{
+	height: 4em;	
+}
+
+.ui-icon-puttyenterprise-icon{
+    background-image: url(../images/enterprise-icon.png)	;
+}
+
+.ui-icon-qr-icon{
+    background-image: url(../images/qr-icon.png)	;
+}
+.puttytemplate-img-align-center{
+	width: 100%;
+	display:block;
+	margin:auto;
+	padding:auto;
+	}
+.puttytemplate-img-align-center img{
+		margin-left:5em;
+	}
+.puttytemplate-header1 {
+	text-align:center;
+	display:block;
+	width: 100%;
+	}
+	
+.puttytemplate-header1 h1{
+	text-align:center;
+	display:block;
+	width: 100%;
+	}
+.ui-radio{
+	
+	width: 6em;
+	}
+
+
+.puttyme-menu-title{
+	text-align: center;
+	font-family: "Arial Narrow", sans-serif;
+	font-weight: bolder;
+	text-transform: capitalize;
+}
+

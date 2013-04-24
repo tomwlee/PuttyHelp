@@ -1,0 +1,801 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Putty Help</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.3.1.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.3.1.css" rel="stylesheet" type="text/css"/>
+
+<link href="css/puttytheme_5.css" rel="stylesheet" type="text/css"> 
+
+
+<link href="css/mystyle.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery.js" type="text/javascript"></script>
+
+<!--<script src="js/custom-mobile.js"></script>-->
+
+<script src="jquery-mobile/jquery.mobile-1.3.1.js" type="text/javascript"></script>
+
+
+<script src="js/jquery.cookie.js"></script>
+
+<script src="js/barcodescanner.js"> </script>
+
+
+<script type="text/javascript" src="js/myjs.js"> </script>
+	
+	<style type="text/css" media="all">
+        body{
+				font-family: "Arial Narrow", sans-serif; !important
+			}
+			
+		.align-right{
+				float: right;	
+			}
+			
+		.align-left{
+				float: left;	
+			}
+			
+			
+			
+    </style>
+</head>
+
+<body>
+<!--Home Page-->
+<div data-role="page" id="puttyhelp_home" data-theme="a">
+  <!--Header -->
+  <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+      <h2>PuttyHelp</h2>
+     	<a data-icon="grid"  
+                data-role="button" 
+                data-iconpos="notext" 
+                href="#"
+                data-transition="slidedown"
+                 
+                 >
+                 
+                 
+                home
+       </a>
+         
+      <a data-icon="arrow-r"  
+                data-role="button" 
+                data-iconpos="right" 
+                data-rel="dialog" 
+                href="#login"
+                data-transition="slidedown"
+                 
+                 class="ui-btn-right" 
+                 >
+                 
+                 <!--#login-home -->
+                Log in 
+            </a>
+            
+  </div>
+  
+  <!-- End Header -->
+  <div data-role="content" data-theme="a">
+
+   <ul data-role="listview" data-theme="a">
+          
+          <li> 
+          <a href="#knowledge_base_videos">
+            	<img src="images/help_icons/knowledge_base.png"
+                alt="" />
+            	<h2> Knowledge Base</h2>
+            	<p>Access the Knowledge Base</p>
+          </a>
+          </li>
+          <li> 
+          	<a href="#puttyhelp_support">
+            	<img src="images/help_icons/support.png" alt="" />
+            	<h2> Get Support</h2>
+            	<p>Contact Us For Support</p>
+          	</a>
+          </li>
+          
+          <li> 
+          	<a href="#suggestions">
+            	<img src="images/help_icons/suggestions.png" alt="" />
+            	<h2> Suggestions</h2>
+            	<p>Have an idea?</p>
+            </a>
+          </li>
+          
+          <li> 
+          	<a href="#training">
+            	<img src="images/help_icons/training.png" alt="" />
+            	<h2> Training</h2>
+            	<p>Training Courses</p>
+            </a>
+          </li>
+    </ul>
+
+
+  </div>
+  <!--end home content -->
+  
+
+<!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+<!--End Main Footer-->
+  
+</div>
+<!-- End Home -->
+<!-- Knowledge Base Videos Page-->
+<div data-role="page" id="knowledge_base_videos">
+  <!--Header -->
+  <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+      <h2>PuttyHelp</h2>
+  <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"> Back </a>
+         
+      <a data-icon="arrow-r"  
+                data-role="button" 
+                data-iconpos="right" 
+                data-rel="dialog" 
+                href="#login"
+                data-transition="slidedown"
+                 
+                 class="ui-btn-right" 
+                 >
+                 
+                 <!--#login-home -->
+                Log in 
+            </a>
+            
+  </div>
+  
+  <!-- End Header -->
+  <div data-role="content" data-theme="a">
+ 	 <div data-role="navbar">
+   		 <ul>
+      		<li><a href="#knowledge_base_videos" class="ui-btn-active ui-state-persist"><h3>Videos</h3></a></li>
+      		<li><a href="#knowledge_base_charts"><h3>Charts</h3></a></li>
+      		<li><a href="#knowledge_base_training"><h3>Training</h3></a></li>
+   		</ul>
+     	</div>
+        <div data-role="collapsible" data-collapsed="true"><h3>Ground Zero</h3>
+     <ul data-role="listview">
+     <li><a href="#video_page" >Login To Your Enterprise</a></li>
+     <li><a href="#video_page">éGlobal user settings</a></li>     
+     <li><a href="#video_page">Navigating between applications</a></li>
+     <li><a href="#video_page">Manage user profile in Dashboard</a></li>
+     </ul>
+     </div>	
+     <div data-role="collapsible" data-collapsed="true"><h3>éSummary</h3>
+     </div>	
+     
+     <div data-role="collapsible" data-collapsed="true"><h3>éRecords</h3>
+     </div>
+  </div>
+  <!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+  <!--End Main Footer-->
+</div>
+<!-- END Knowledge Base Videos Page-->
+
+<!--START Charts Page-->
+<div data-role="page" id="knowledge_base_charts">
+  <!--Header -->
+  <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+      <h2>PuttyHelp</h2>
+  <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"> Back </a>
+         
+      <a data-icon="arrow-r"  
+                data-role="button" 
+                data-iconpos="right" 
+                data-rel="dialog" 
+                href="#login"
+                data-transition="slidedown"
+                 
+                 class="ui-btn-right" 
+                 >
+                 
+                 <!--#login-home -->
+                Log in 
+            </a>
+            
+  </div>
+  
+  <!-- End Header -->
+  <div data-role="content" data-theme="a">
+  <div data-role="navbar">
+   		 <ul>
+      		<li><a href="#knowledge_base_videos"><h3>Videos</h3></a></li>
+      		<li><a href="#knowledge_base_charts" class="ui-btn-active ui-state-persist"><h3>Charts</h3></a></li>
+      		<li><a href="#knowledge_base_training"><h3>Training</h3></a></li>
+   		</ul>
+     	</div>
+	CHARTS
+  </div>
+  <!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+  <!--End Main Footer-->
+</div>
+<!--END Charts Page-->
+
+<!--START Training Page-->
+<div data-role="page" id="knowledge_base_training">
+  <!--Header -->
+  <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+      <h2>PuttyHelp</h2>
+     	  <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"> Back </a>
+         
+      <a data-icon="arrow-r"  
+                data-role="button" 
+                data-iconpos="right" 
+                data-rel="dialog" 
+                href="#login"
+                data-transition="slidedown"
+                 
+                 class="ui-btn-right" 
+                 >
+                 
+                 <!--#login-home -->
+                Log in 
+            </a>
+            
+  </div>
+  
+  <!-- End Header -->
+  <div data-role="content" data-theme="a">
+  <div data-role="navbar">
+   		 <ul>
+      		<li><a href="#knowledge_base_videos"><h3>Videos</h3></a></li>
+      		<li><a href="#knowledge_base_charts"><h3>Charts</h3></a></li>
+      		<li><a href="#knowledge_base_training" class="ui-btn-active ui-state-persist"><h3>Training</h3></a></li>
+   		</ul>
+     	</div>
+	Training
+  </div>
+  <!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+  <!--End Main Footer-->
+</div>
+<!--END Training Page-->
+
+<div data-role="page" id="puttyhelp_support" data-theme="a">
+  <!--Header -->
+  <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+      <h2>PuttyHelp</h2>
+  <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"> Back </a>
+         
+      <a data-icon="arrow-r"  
+                data-role="button" 
+                data-iconpos="right" 
+                data-rel="dialog" 
+                href="#login"
+                data-transition="slidedown"
+                 
+                 class="ui-btn-right" 
+                 >
+                 
+                 <!--#login-home -->
+                Log in 
+            </a>
+            
+  </div>
+  
+  <!-- End Header -->
+  <div data-role="content" data-theme="a">
+	<div>
+	<h3>
+    <center>
+    Submit a technical support ticket
+	<br>
+	and get expert help 
+    </center>
+    </h3>
+    
+By clicking 'Submit a support ticket' you can submit queries to our team of technical experts. 
+<p>
+Support tickets are questions about specific problems that you might be experiencing when using Claydata systems.
+<p>
+Please check our Knowledge Base and Suggestions areas before submitting a ticket - you might find that we've answered your question already or that the Claydata community has come up with a solution.
+<p>
+ 
+
+When you submit a ticket, you will receive email notification and updates as to the status of your query through to resolution. 
+<p>
+You can view and manage open tickets from your email notifications or from here by clicking 'View existing ticket'.
+<p>
+
+    <br>
+	</div>
+    <p>
+    <div>
+    <ul data-role="listview"> 
+          <li> 
+          <a href="#knowledge_base_videos">
+            	<img src="images/help_icons/existingticket.png"
+                alt="" />
+            	<h2> View existing ticket</h2>
+            	<p>View existing ticket</p>
+          </a>
+          </li>
+          <li> 
+          	<a href="#puttyhelp_submit_ticket">
+            	<img src="images/help_icons/newticket.png" alt="" />
+            	<h2> Submit a support ticket</h2>
+            	<p>Submit a support ticket</p>
+          	</a>
+          </li>     
+    </ul>
+
+  </div> 
+  </div>
+
+<!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+<!--End Main Footer-->
+  
+</div>
+
+<div data-role="page" id="puttyhelp_submit_ticket" data-theme="a">
+  <!--Header -->
+  <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+      <h2>PuttyHelp</h2>
+     	  <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"> Back </a>
+         
+      <a data-icon="arrow-r"  
+                data-role="button" 
+                data-iconpos="right" 
+                data-rel="dialog" 
+                href="#login"
+                data-transition="slidedown"
+                 
+                 class="ui-btn-right" 
+                 >
+                 
+                 <!--#login-home -->
+                Log in 
+            </a>
+            
+  </div>
+  
+  <!-- End Header -->
+  <div data-role="content" data-theme="a">
+  	<h3>
+    <center>
+    Submit a technical support ticket 
+    </center>
+    </h3>
+	<div>
+    Catagory:
+    <select name="catagory">
+    <option value="1">General</option>
+	<option value="2">Onsite Support</option>
+    </select>
+    Priority:
+	<select name="priority">
+	<option value="3">Low</option>
+	<option value="2">Medium</option>
+	<option value="1">High</option>
+	</select>
+    Subject:
+    <input type="text" value="" maxlength="40" size="40" name="subject">
+    Message:
+    <textarea cols="60" rows="12" name="message"></textarea>
+    Attachments:
+    <input type="file" size="50" name="attachment[1]">
+    <input type="file" size="50" name="attachment[2]">
+    <br>
+     <ul data-role="listview"> 
+          <li> 
+          <a href="#knowledge_base_videos">
+            	<h2> Submit</h2>
+          </a>
+          </li>     
+    </ul>
+    </div>
+  </div>
+
+<!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+<!--End Main Footer-->
+</div>
+
+<!--START Training-->
+<div data-role="page" id="training">
+  <!--Header -->
+  <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+      <h2>PuttyHelp</h2>
+  <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"> Back </a>
+         
+      <a data-icon="arrow-r"  
+                data-role="button" 
+                data-iconpos="right" 
+                data-rel="dialog" 
+                href="#login"
+                data-transition="slidedown"
+                 
+                 class="ui-btn-right" 
+                 >
+                 
+                 <!--#login-home -->
+                Log in 
+            </a>
+            
+  </div>
+  
+  <!-- End Header -->
+  <div data-role="content" data-theme="a">
+  <div>
+ 	 <input name="Search " type="text" size="10" maxlength="60">
+  		<input name="Search" type="button" value="Search">
+  </div>
+        
+        <div data-role="collapsible" data-collapsed="true"><h3>Topic-1</h3>
+     <ul data-role="listview">
+     <li><a href="#video_page">content</a></li>
+     <li><a href="#video_page">content</a></li>     
+     <li><a href="#video_page">content</a></li>
+     <li><a href="#video_page">content</a></li>
+     </ul>
+     </div>	
+     <div data-role="collapsible" data-collapsed="true"><h3>Topic-2</h3>
+     </div>	
+     
+     <div data-role="collapsible" data-collapsed="true"><h3>Topic-3</h3>
+     </div>
+  </div>
+  <!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+  <!--End Main Footer-->
+  
+</div>
+<!-- END Training-->
+
+<!--START Video Page-->
+<div data-role="page" id="video_page">
+  <!--Header -->
+  <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+      <h2>PuttyHelp</h2>
+  <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"> Back </a>
+         
+      <a data-icon="arrow-r"  
+                data-role="button" 
+                data-iconpos="right" 
+                data-rel="dialog" 
+                href="#login"
+                data-transition="slidedown"
+                 
+                 class="ui-btn-right" 
+                 >
+                 
+                 <!--#login-home -->
+                Log in 
+            </a>
+            
+  </div>
+  
+  <!-- End Header -->
+  <div data-role="content" data-theme="a">
+		<div data-role="content">	
+		<video width="320" height="240" controls>
+        <source src="http://nsvc.info/michael/test.mp4" type=		"video/mp4">
+        </video>	
+	</div>
+        
+  </div>  
+  <!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+  <!--End Video Page-->
+  
+</div>
+<!-- END Video Page-->
+
+<!--START Training-->
+<div data-role="page" id="suggestions">
+  <!--Header -->
+  <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+      <h2>PuttyHelp</h2>
+  <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"> Back </a>
+         
+      <a data-icon="arrow-r"  
+                data-role="button" 
+                data-iconpos="right" 
+                data-rel="dialog" 
+                href="#login"
+                data-transition="slidedown"
+                 
+                 class="ui-btn-right" 
+                 >
+                 
+                 <!--#login-home -->
+                Log in 
+            </a>
+            
+  </div>
+  
+  <!-- End Header -->
+  <div data-role="content" data-theme="a">
+  	<div>
+    	<h3><center>Catagory</center></h3>
+		<select>
+ 		 <option value="platforms">platforms</option>
+ 		 <option value="applications">applications</option>
+ 		 <option value="gateways">gateways</option>
+ 		 <option value="hardware">hardware</option>
+    	 <option value="packages">packages</option>
+		</select> 
+        <h3><center>Suggestion</center></h3>
+ 		<input name="Content" type="text" size="10" maxlength="2000">
+  		<input name="Submit" type="button" value="Submit">
+ 	</div>
+        
+  </div>
+  <!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+  <!--End Main Footer-->
+  
+</div>
+<!-- END Training-->
+
+<!--Framework Pages-->
+<!--Search Page-->
+<div data-role="page" id="puttytemplate-search" data-theme="a">
+  <!--Header -->
+  <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+  <h2>Search</h2>
+   <a 
+         	data-role="button" 
+            data-iconpos="left"
+            data-icon="grid"
+        	href="#puttytemplate-qr"
+            data-transition="slidedown"
+            >
+            
+            QR
+        </a>
+  <a data-icon="gear"  
+         	data-role="button" 
+            data-iconpos="notext" 
+            data-rel="dialog" 
+        	href="#puttytemplate-search-setting"
+            data-transition="slidedown"
+            
+            >
+            Setting
+        </a>
+        
+   
+  </div>  
+  <!-- End Search Header -->
+  
+  
+  <div data-role="content" data-theme="d">
+    
+   <!--
+    <fieldset data-role="controlgroup" data-type="horizontal"  >
+    	
+         	<input type="radio" name="radio-choice-2" data-mini="true" id="radio-choice-21" value="Contact" checked="checked" />
+         	<label for="radio-choice-21">Contact</label>
+            
+            
+         	<input type="radio" name="radio-choice-2" data-mini="true"  id="radio-choice-22" value="Problem"  />
+         	<label for="radio-choice-22">Problem</label>
+
+         	<input type="radio" name="radio-choice-2"  data-mini="true" id="radio-choice-23" value="Action"  />
+         	<label for="radio-choice-23">Action</label>
+    </fieldset>
+ -->
+    	<a data-icon="delete" data-role="button" data-mini="true"> Comment: hide contacts</a>
+        <input type="search" name="search-2" id="search-2" value="" />
+	
+
+<br>
+    <ul data-role="listview" data-filter-theme="c">
+    	<li data-role="list-divider">2 Results</li>
+    	<li data-theme="a">
+            <a href="#">
+                <h2>
+                    Diabetes Mellitus Secondary to <br> 					
+                    hypertriglyceridaemia
+                </h2>
+                <p> 21 Dec 2008 Dr. Phillip Joes</p>
+                <p >(2/13/43)</p> 
+             </a>
+         </li>
+         <li>
+            <a href="#">
+                <h2>Sys Lab Request</h2>
+                <p> 23 Dec 2008 Dr. Phillip Joes</p>
+                <p >(2/13/43)</p>
+            </a>
+         </li>
+        
+        
+    </ul>
+
+  </div><!--end search content -->
+  
+<!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+<!--End Main Footer-->
+  
+</div>
+<!-- End Search -->
+
+<!--PuttyTemplate P'App -->
+<div data-role="page" id="puttytemplate-app">
+  <div data-role="header"> 
+  	<a data-icon="back" data-role="button" data-iconpos="notext" data-rel="back" href="#puttytemplate-home"> 
+    	Back 
+    </a>
+    <h1>Our Platforms</h1>
+  </div>
+  
+  <div data-role="content"> 
+  		
+        <ul data-role="listview" data-filter="true" >
+          <li data-role="list-divider"> 
+            Platform List
+          </li>
+          <li> 
+          	<a href="#putty-box">
+            	<img src="images/temp/platforms_box_128px.png" alt="" />
+            	<h2> PuttyBox</h2>
+            	<p>PuttyBox Short Desc</p>
+            </a>
+          </li>
+          <li>
+            <a href="#putty-connect">
+            	<img src="images/temp/platforms_connect_128px.png" alt="" />
+            	<h2> PuttyConnect</h2>
+            	<p> PuttyConnect Short Desc</p>
+            </a>
+          </li>
+          <li>
+            <a href="#putty-enterprise">
+            	<img src="images/temp/platforms_enterprise_128px.png" alt="" />
+            	<h2> PuttyEnterprise</h2>
+            	<p>PuttyEnterprise Short Desc</p>
+            </a>
+          </li>
+          
+          <li>
+            <a href="#putty-puttyfree">
+            	<img src="images/temp/platforms_free_128px.png" alt="" />
+            	<h2> PuttyFree</h2>
+            	<p>PuttyFree Short Desc</p>
+            </a>
+          </li>
+          
+          <li>
+            <a href="#putty-me">
+            	<img src="images/temp/platforms_me_128px.png" alt="" />
+            	<h2> PuttyMe</h2>
+            	<p>PuttyMe Short Desc</p>
+            </a>
+          </li>
+          
+          <li>
+            <a href="#putty-qandax">
+            	<img src="images/temp/platforms_qandax_128px.png" alt="" />
+            	<h2> PuttyQandax</h2>
+            	<p>PuttyQandax Short Desc</p>
+            </a>
+          </li>
+          
+          <li>
+            <a href="#putty-share">
+            	<img src="images/temp/platforms_share_128px.png" alt="" />
+            	<h2> PuttyShare</h2>
+            	<p>PuttyShare Short Desc</p>
+            </a>
+          </li>
+            
+     
+          
+          <li>
+            <a href="#putty-help">
+            	<img src="images/temp/platforms_help_128px.png" alt="" />
+            	<h2> PuttyHelp</h2>
+            	<p>PuttyHelp Short Desc</p>
+            </a>
+          </li>
+          
+    </ul>
+  </div>
+  
+  
+<!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+<!--End Main Footer-->
+ 
+</div>
+<!-- end mybookings-home-->
+
+<!--Setting Page-->
+<div data-role="page" id="puttytemplate-setting" data-theme="a">
+  <!--Header Setting-->
+  <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+      <h2>Setting</h2>
+      <a data-icon="star"  
+                data-role="button" 
+                data-iconpos="notext" 
+                data-rel="dialog" 
+                href="#"
+                data-transition="slidedown"
+                 >
+                 
+                Home
+            </a>
+            
+      <a 	data-icon="arrow-r"
+                data-role="button" 
+                data-iconpos="right" 
+                href="#save-setting"
+                data-transition="slideup"
+                data-rel="dialog"
+                 >
+                Save
+            </a>
+            
+  </div>
+  
+  <!-- End Setting Header -->
+  <div data-role="content" data-theme="a">
+
+   <div data-role="fieldcontain" >
+ 	<label for="flip-showhelp">Show Help:</label>
+        <select  name="flip-showhelp" id="flip-showhelp" data-role="slider">
+            <option value="hide">HIDE</option>
+            <option value="show" selected="selected">SHOW</option>
+        </select> 
+        
+        
+	</div>
+	
+  </div><!--end Setting content -->
+  
+<!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+<!--End Main Footer-->
+  
+</div>
+<!-- End Setting -->
+
+</body>
+</html>
+
