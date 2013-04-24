@@ -33,13 +33,25 @@
 
 <!--puttyhelp_home-->
 <div data-role="page" id="puttyhelp_home" data-theme="a">
+
+  <!--left-panel-->
+  <div data-role="panel" id="left-panel"  >
+  
+    Left panel
+    <a href="#puttytemplate-header" data-role="button" data-rel="close">Close panel</a>
+  </div>
+    <div data-role="panel" id="right-panel"  >
+  
+    right panel
+    <a href="#puttytemplate-header" data-role="button" data-rel="close">Close panel</a>
+  </div>
   <!--Header -->
   <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
       <h2>PuttyHelp</h2>
      	<a data-icon="grid"  
                 data-role="button" 
                 data-iconpos="notext" 
-                href="#"
+                href="#left-panel"
                 data-transition="slidedown"
                  
                  >
@@ -65,7 +77,7 @@
   </div>
   
  
-  <div data-role="content" data-theme="a">
+  <div data-role="content" data-theme="a" class="swipable" >
 
    <ul data-role="listview" data-theme="a">
           
