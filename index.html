@@ -937,6 +937,286 @@ You can view and manage open tickets from your email notifications or from here 
   
 </div>
 
+<!--Kannan's code -->
+<!--login-->
+<div data-role="page" id="login">
+ 
+ <!-- HEADER  LOGIN -->
+ <div data-role="header" id="puttytemplate-header" data-position="fixed" >
+  <h2>puttytemplate</h2>
+  <a data-icon="home"    data-role="button" 
+            data-iconpos="right" 
+            data-rel="dialog" 
+            href="#home">
+            Back
+        </a>
+   
+  </div>
+ 
+   
+   
+   <!-- Home -->
+            <div data-role="content">
+                <div data-role="fieldcontain" id="username">
+                    <input name="username" id="login-username" 
+                    	placeholder="username" value="" type="text" data-mini="true" />
+                </div>
+                <div data-role="fieldcontain" id="password">
+                    <input name="password" id="login-password" placeholder="password" value="" 
+                        type="password" data-mini="true" />
+                        
+                    <a href="#FYP" data-rel="dialog" data-theme="a">
+                        forgot your password 
+                    </a>
+                
+                </div>
+                <a href="#" id="login-submit" data-role="button" data-inline="true">login</a>
+           
+          		<a href="#addnewuser" data-rel="dialog" 
+                	data-role="button" data-inline="true" style="float:right">
+                    Register
+                </a>
+             </div>
+ </div>
+ 
+<!--Forgot your password -->
+<div data-role="page" id="FYP">
+
+      <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+          <h2>Forgot Password</h2>
+          <a data-icon="arrow-r"  
+                     data-role="button" 
+                    data-iconpos="right" 
+                    data-rel="dialog" 
+                    href="#login">
+                    Log in 
+                </a>
+       
+      </div>
+  
+      <div data-role="content">
+                    <div data-role="fieldcontain" id="email">
+                        <input name="email" id="email" placeholder="Email" 
+                            value="" type="text" data-mini="true" />
+                        <a href="#" data-role="button" data-inline="true" style="float:right" >
+                            Submit
+                        </a>
+                    </div>
+     </div>
+ 
+ </div>
+ 
+<!--Register a new User -->
+<div data-role="page" id="addnewuser">
+
+
+	<div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+          <h2>Register</h2>
+          <a data-icon="arrow-r"  
+                     data-role="button" 
+                    data-iconpos="right" 
+                    data-rel="dialog" 
+                    href="#login">
+                    Log in 
+                </a>
+   
+ 	</div>
+    
+  <!-- REGISTERING BODY-->
+  <div data-role="content">
+           <div data-role="fieldcontain" id="username">
+                    <input name="username" id="username" 
+                        placeholder="username" value="" type="text" data-mini="true" />
+                </div>
+                
+                <div data-role="fieldcontain" id="password">
+                     <input name="password" id="password" placeholder="password" 
+                        value="" type="password" data-mini="true" />
+                </div>
+                
+                <div data-role="fieldcontain" id="cpassword">
+                     <input name="confirmpassword" id="cpassword" placeholder="confirm password" 
+                        value="" type="password" data-mini="true" />
+                </div>
+                
+                <div data-role="fieldcontain" id="emailaddress">
+                <input name="email" id="emailaddress" placeholder="email" 
+                		value="" type="email" data-mini="true" />
+                </div>
+                
+                <div data-role="fieldcontain" id="mobilenumber">
+                
+                	<input name="mobile" id="mobilenumber" 
+                   		 placeholder="countrycode areacode phone number e.g. +61"
+                		 value="" type="tel" data-mini="true" />
+                </div>
+                
+            </div>
+            
+            <a href="#" data-role="button" data-inline="true" style="float:right">submit</a>
+            <!-- END OF REGISTERING BODY-->
+  </div>
+
+
+<!-- FORM page -->
+<div data-role="page" id="form">
+  <div data-role="header">
+  <a href="#" data-role="button" data-iconpos="notext" data-rel="back" data-icon="back"> Back</a>
+    <h1>eForm</h1>
+    <a href="#" data-role="button" data-icon="check"> Save</a>
+  </div>
+ <div data-role="content">
+                <div data-role="collapsible" id="qandaxq1" data-mini="true">
+                    <h1>Question 1</h1>
+                    <fieldset data-role="controlgroup">
+                        <legend></legend>
+            <div data-role="collapsible" id="qandaxq1" data-mini="true">             <h1>A_01</h1>
+             <label for="qandaxao02">Ao1</label>
+                        <input type="checkbox" id="qandaxao02" value="test2" data-mini="true">
+                        <label for="qandaxao03">Ao2</label>
+                        <input type="checkbox" id="qandaxao03" value="test3" data-mini="true">
+            </div>
+                        <label for="qandaxa02">A01</label>
+                        <input type="checkbox" id="qandaxa02" value="test2" data-mini="true">
+                        <label for="qandaxa02">A02</label>
+                        <input type="checkbox" id="qandaxa03" value="test3" data-mini="true">
+                        <label for="qandaxa03">A03</label>
+                    </fieldset>
+                </div>
+                <div data-role="collapsible" id="qandaxq2" data-mini="true">
+                    <h1>Question 2</h1>
+                    <fieldset data-role="controlgroup">
+                        <legend></legend>
+                        <input type="checkbox" id="qandaxa01" data-mini="true">
+                        <label for="qandaxa01">A01</label>
+                        <input type="checkbox" id="qandaxa02" data-mini="true">
+                        <label for="qandaxa02">A02</label>
+                        <input type="checkbox" id="qandaxa03" data-mini="true">
+                        <label for="qandaxa03">A03</label>
+                    </fieldset>
+                </div>
+                
+                
+                <div data-role="collapsible" id="qandaxq3" data-mini="true">
+                    <h1>Question 3</h1>
+                    <fieldset data-role="controlgroup">
+                        <legend></legend>
+                        <input type="checkbox" id="checkbox1" data-mini="true">
+                        <label for="checkbox1">A01</label>
+                        <input type="checkbox" id="checkbox2" data-mini="true">
+                        <label for="checkbox2">A02</label>
+                        <input type="checkbox" id="checkbox3" data-mini="true">
+                        <label for="checkbox3">A03</label>
+                    </fieldset>
+                </div>
+                <div data-role="collapsible" id="qandaxq4" data-mini="true">
+                    <h1>Question 4</h1>
+                    <fieldset data-role="controlgroup">
+                        <legend></legend>
+                        <input type="checkbox" id="checkbox4" data-mini="true">
+                        <label for="checkbox4">A01</label>
+                        <input type="checkbox" id="checkbox5" data-mini="true">
+                        <label for="checkbox5">A02</label>
+                        <input type="checkbox" id="checkbox6" data-mini="true">
+                        <label for="checkbox6">A03</label>
+                    </fieldset>
+                </div>
+            </div>
+ 
+    
+<!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+<!--End Main Footer-->
+  
+  
+</div>
+
+
+<!--Help page -->
+ <div data-role="page" id="help-page">
+  <div data-role="header">
+  <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"> Back </a>
+    <h1>eRecord</h1>
+    </div>
+ 
+<div data-role="content">
+<div class="puttytemplate-img-align-center">
+ 	<img src="images/temp/Records.png" ><br>
+ </div>
+ <h2> PuttyHealth™ eRecords view </h2>
+  <div data-role="collapsible-set">
+    <div data-role="collapsible">
+      <h3>Details</h3>
+      
+<p>
+
+<strong>éRecords</strong> displays the full record for a given contact (éContacts), organizing this data hierarchically according to tagged parent problems (Pr) and children actions (Ax). The display of the éRecords app provides users with all the functionality of éConsole.
+  </p>
+    </div>
+    </div>
+    </div>
+<div data-role="fieldcontain">
+ 	
+<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" data-inline="true" />
+<label for="checkbox-1">Do Not Show the help Page</label>
+    
+</div>
+
+    <a href="#puttytemplate-eRecords" data-role="button"> Go to application </a>
+    
+    
+  
+<!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+<!--End Main Footer-->  
+  
+</div>
+<!--End Help -->
+
+<!--End Kannan's Code -->
+
+<!-- test2-->
+<div data-role="page" id="test2" data-theme="c">
+  <div data-role="header"> 
+  	
+    <h1>Test Landing page 2 </h1>
+  </div>
+  <div data-role="content"> 
+  	<a data-rel="back" data-role="button"  data-theme="b" href="#" > 
+    	Close
+    </a>
+  </div>
+  <div data-role="footer" data-theme="c">
+    <h4></h4>
+  </div>
+</div>
+
+<!-- Test Landing page-->
+<div data-role="page" id="test" >
+
+	<div data-role="header">
+    	<h1>Landing Page</h1>	
+    </div>
+    
+    <div data-role="content">
+    	Yessssssssssss !!
+    </div>
+    
+<!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+
+  
+</div>
+
 </body>
 </html>
 
