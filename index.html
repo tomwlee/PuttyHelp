@@ -7,8 +7,6 @@
 <link href="jquery-mobile/jquery.mobile.structure-1.3.1.css" rel="stylesheet" type="text/css"/>
 
 <link href="css/puttytheme_5.css" rel="stylesheet" type="text/css"> 
-
-
 <link href="css/mystyle.css" rel="stylesheet" type="text/css">
 <script src="jquery-mobile/jquery.js" type="text/javascript"></script>
 
@@ -21,29 +19,19 @@
 
 <script src="js/barcodescanner.js"> </script>
 
-
 <script type="text/javascript" src="js/myjs.js"> </script>
 	
 	<style type="text/css" media="all">
         body{
 				font-family: "Arial Narrow", sans-serif; !important
-			}
-			
-		.align-right{
-				float: right;	
-			}
-			
-		.align-left{
-				float: left;	
-			}
-			
-			
+			}			
 			
     </style>
 </head>
 
 <body>
-<!--Home Page-->
+
+<!--puttyhelp_home-->
 <div data-role="page" id="puttyhelp_home" data-theme="a">
   <!--Header -->
   <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
@@ -76,7 +64,7 @@
             
   </div>
   
-  <!-- End Header -->
+ 
   <div data-role="content" data-theme="a">
 
    <ul data-role="listview" data-theme="a">
@@ -224,7 +212,7 @@
   </div>
   <!--End Main Footer-->
 </div>
-<!--END Charts Page-->
+
 
 <!--START Training Page-->
 <div data-role="page" id="knowledge_base_training">
@@ -267,8 +255,8 @@
   </div>
   <!--End Main Footer-->
 </div>
-<!--END Training Page-->
 
+<!--puttyhelp_support-->
 <div data-role="page" id="puttyhelp_support" data-theme="a">
   <!--Header -->
   <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
@@ -349,6 +337,7 @@ You can view and manage open tickets from your email notifications or from here 
   
 </div>
 
+<!--puttyhelp_submit_ticket-->
 <div data-role="page" id="puttyhelp_submit_ticket" data-theme="a">
   <!--Header -->
   <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
@@ -416,7 +405,7 @@ You can view and manage open tickets from your email notifications or from here 
 <!--End Main Footer-->
 </div>
 
-<!--START Training-->
+<!--training-->
 <div data-role="page" id="training">
   <!--Header -->
   <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
@@ -468,9 +457,8 @@ You can view and manage open tickets from your email notifications or from here 
   <!--End Main Footer-->
   
 </div>
-<!-- END Training-->
 
-<!--START Video Page-->
+<!--video_page-->
 <div data-role="page" id="video_page">
   <!--Header -->
   <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
@@ -510,9 +498,8 @@ You can view and manage open tickets from your email notifications or from here 
   <!--End Video Page-->
   
 </div>
-<!-- END Video Page-->
 
-<!--START Training-->
+<!--suggestions-->
 <div data-role="page" id="suggestions">
   <!--Header -->
   <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
@@ -560,7 +547,6 @@ You can view and manage open tickets from your email notifications or from here 
   <!--End Main Footer-->
   
 </div>
-<!-- END Training-->
 
 <!--Framework Pages-->
 <!--Search Page-->
@@ -648,9 +634,8 @@ You can view and manage open tickets from your email notifications or from here 
 <!--End Main Footer-->
   
 </div>
-<!-- End Search -->
 
-<!--PuttyTemplate P'App -->
+<!--puttytemplate-app -->
 <div data-role="page" id="puttytemplate-app">
   <div data-role="header"> 
   	<a data-icon="back" data-role="button" data-iconpos="notext" data-rel="back" href="#puttytemplate-home"> 
@@ -741,9 +726,8 @@ You can view and manage open tickets from your email notifications or from here 
 <!--End Main Footer-->
  
 </div>
-<!-- end mybookings-home-->
 
-<!--Setting Page-->
+<!--puttytemplate-setting-->
 <div data-role="page" id="puttytemplate-setting" data-theme="a">
   <!--Header Setting-->
   <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
@@ -794,7 +778,57 @@ You can view and manage open tickets from your email notifications or from here 
 <!--End Main Footer-->
   
 </div>
-<!-- End Setting -->
+
+<!--puttytemplate-qr-->
+<div data-role="page" id="puttytemplate-qr" data-theme="a">
+  <!--Header Setting-->
+  <div data-role="header" id="puttytemplate-header" data-position="fixed"  data-theme="a">
+      <h2>QR</h2>
+      <a data-icon="back"  
+                data-role="button" 
+                data-iconpos="notext" 
+                data-rel="back" 
+                href="#"
+                data-transition="slidedown"
+                 >
+                 
+                Logo
+       </a>
+            
+            
+            
+  </div>
+  
+  <!-- End QR Header -->
+  
+  
+  <div data-role="content" data-theme="a">
+		
+		
+        <a data-role="button" id="puttytemplate-scanqr" >SCAN QR CODE </a>
+        
+        <br />
+        <div id="qr-result"></div>
+        <br />
+        <a data-rel="back" data-role="button"  data-theme="b" href="#" > back</a>
+        <br />
+       
+        
+        <h1>#Debugging section#</h1>
+        <a data-rel="external" href="http://www.google.com" >test link 1</a> <br />
+        <a href="http://www.google.com" >test link 2</a>
+    	Back 
+    </a>
+  </div><!--end QR content -->
+  
+<!--Main Footer -->
+  <div data-role="footer" footer-nav="enabled" data-theme="a" data-position="fixed" data-id="puttytemplate-footer" >
+  	    
+      <div class="puttytemplate-footer-bot-space"></div>
+  </div>
+<!--End Main Footer-->
+  
+</div>
 
 </body>
 </html>

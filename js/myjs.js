@@ -7,7 +7,6 @@
 */
 
 
-	
 
 /*Example of a single page*/
 	/*$("#puttytemplate-home").bind("pageinit",function(event){
@@ -20,35 +19,32 @@
 
 
 /*INIT FOOTER*/
+
 $(document).bind("pageshow",function(event){
+		
+		
 		$("#" + event.target.id).find("[data-role=footer][footer-nav=enabled]").load("footer.html", function(){
                
-			    // activate jquery mobile function (navbar())
 				$("#" + event.target.id).find("[data-role=navbar]").navbar();
             });
+			
 });
-
 /*END INIT FOOTER*/
 
-
-
-
-    
-$(document).ready(function(e) {
-	
 /*Log in*/
 $("#login").bind("pageinit",function(){
 	
 	$("#login-submit").bind("click",function(){
-		alert("submit !");
 		var username = $("#login").find("#login-username").val();
 		var password = $("#login").find("#login-password").val();
 		
 		
-		/*$.cookie('username', username);
+		$.cookie('username', username);
 		$.cookie('password', password);
 		
-		alert("submit ! \n"+$.cookie('username')+" \n"+$.cookie('password'));*/
+		
+		
+		alert("submit ! \n"+$.cookie('username')+" \n"+$.cookie('password'));
 		if(username=="leew" && password == "leew"){
 			
 			$.mobile.changePage($("#test"));
@@ -56,18 +52,20 @@ $("#login").bind("pageinit",function(){
 			alert("username and pass is wrong !!");
 			}
 		
+		
 	});
 	
 });
 
 
 /*QR SCANNER*/
-/*
 $("#puttytemplate-qr").bind("pageinit",function(){
-
 	
-	$("#puttytemplate-scanqr").bind('click',function(e){
-		alert("start scanning");
+	$("#qr-result").html("");
+	
+	/*INVOKER for the lastest version of phonegap*/
+	/*$("#puttytemplate-scanqr").bind('click',function(e){
+		
 		window.plugins.barcodeScanner.scan(
 			
 			function(result) { 
@@ -76,8 +74,31 @@ $("#puttytemplate-qr").bind("pageinit",function(){
 			function(error) { 
 				alert("Scanning failed: " + error); 
 			});
-
+		
+	});*/
+	
+	
+	
+	$("#puttytemplate-scanqr").bind('click',function(e){
+		window.plugins.barcodeScanner.scan(
+    		function(result) {
+       				if (result.cancelled){
+            			//alert("the user cancelled the scan");
+						$("#qr-result").text("You just cancelled it :'(");
+					}
+					
+        			else{
+            			//alert("we got a barcode: " + result.text);
+						$("#qr-result").html("<h1>Yesssssssss !!! :D</h1><br /> By the way, the result is :<a href='"+result.text+"' data-rel='external' class='qr-result-link' >"+result.text+"</a>");
+					}
+    		},
+    		function(error) {
+        		alert("scanning failed: " + error);
+    		}
+		)
 	});
 	
-});*/
+	
+	
+	
 });
