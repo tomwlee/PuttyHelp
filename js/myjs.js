@@ -6,8 +6,14 @@
  * 
 */
 
+$(document).on("swiperight", function(event, ui) {
+ 	$("#left-panel").panel( "open");
 
+});
 
+$(document).on("swipeleft", function(event, ui) {
+ 	$("#right-panel").panel( "open");
+});
 
 
 
@@ -24,7 +30,7 @@ $(document).bind("pageshow",function(event){
 });
 /*END INIT FOOTER*/
 
-$(document).bind('pageinit',function(){
+/*$(document).bind('pageinit',function(){
 	$(".swipable").on("swiperight",function(){
 		alert("swipe left");
 		$("#left-panel").panel( "open");
@@ -33,7 +39,9 @@ $(document).bind('pageinit',function(){
 		alert("swipe right");
 		$("#right-panel").panel( "open");
 	});
-});
+});*/
+
+
 
 $(document).ready(function(e) {
 /*Log in*/
