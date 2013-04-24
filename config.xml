@@ -24,5 +24,7 @@ Warut Lee.
 
 <gap:splash src="splash/bb/splash.png" gap:platform="blackberry" />
 <gap:plugin name="BarcodeScanner" />
+
+<preference name="phonegap-version" value="2.3.0" />
 </widget>
 
